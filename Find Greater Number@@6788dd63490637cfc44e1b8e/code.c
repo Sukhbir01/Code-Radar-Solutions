@@ -1,12 +1,15 @@
 #include <stdio.h>
 int main() {
-    int a,b;
-    scanf("%d %d",&a,&b);
-    if(a>b){
-        printf("%d\n",a);
+    int num1, num2;
+    printf("Enter two integers: ");
+    scanf("%d %d", &num1, &num2);
+    if (num1 > num2) {
+        printf("The greatest number is: %d\n", num1);
+    } else if (num2 > num1) {
+        printf("The greatest number is: %d\n", num2);
+    } else {
+        printf("Both numbers are equal.\n");
     }
-    else{
-        printf("%d\n",b):
-    }
+
     return 0;
 }
