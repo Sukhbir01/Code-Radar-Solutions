@@ -1,5 +1,6 @@
 #include <stdio.h>
 int main() {
+    int year;
     if(year%4==0 && year%100!=0){
         printf("Leap Year");
     }
