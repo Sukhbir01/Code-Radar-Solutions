@@ -6,7 +6,7 @@ int main(){
         printf("Vowel");
     }
     else{
-        printf("Constant");
+        printf("Consotant");
     }
     else if(a>='0' && a<='9'){
         printf("Digit");
