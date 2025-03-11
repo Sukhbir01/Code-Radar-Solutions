@@ -1,14 +1,15 @@
 #include <stdio.h>
+#include <math.h>
 
 int main() {
     int num;
     scanf("%d", &num);
 
     if (num == 0) {
-        printf("No set bit found (number is 0).\n");
+        printf("0");
     } else {
-        int lowest_set_bit = num & -num;
-        printf("Lowest set bit: %d\n", lowest_set_bit);
+        int position = log2(num & -num) + 1;
+        printf("%d\n", position);
     }
 
     return 0;
