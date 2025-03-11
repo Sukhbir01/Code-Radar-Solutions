@@ -1,6 +1,6 @@
 #include <stdio.h>
-void main() {
-    char n[20];
+int main() {
+    char n;
     scanf("%c",&n);
     if(n == 'A'){
         printf("Excellent");
