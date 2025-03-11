@@ -2,10 +2,7 @@
 
 int main() {
     int num, n;
-    printf("Enter a number: ");
-    scanf("%d", &num);
-    printf("Enter the bit position to toggle (0-based index): ");
-    scanf("%d", &n);
+    scanf("%d %d", &num,&n);
     num = num ^ (1 << n);
 
     printf("Number after toggling %d-th bit: %d\n", n, num);
