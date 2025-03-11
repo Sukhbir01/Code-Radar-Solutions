@@ -2,19 +2,19 @@
 int main() {
     int n;
     scanf("%d",&n);
-    if(n=='A'){
+    if(n == 'A'){
         printf("Excellent");
     }
-    else if('B'){
+    else if(n == 'B'){
         printf("Good");
     }
-    else if('C'){
+    else if(n == 'C'){
         printf("Average");
     }
-    else if('D'){
+    else if(n == 'D'){
         printf("Below Average");
     }
-    else if('F'){
+    else if(n == 'F'){
         printf("Fail");
     }
     else{
