@@ -6,10 +6,11 @@ int main() {
     scanf("%d", &num);
     int msb = 1 << (sizeof(int) * 8 - 1);
 
-    if (num & msb)
+    if (num & msb){
         printf("Set");
-    else
+    }
+    else{
         printf("Not Set");
-
+    }
     return 0;
 }
