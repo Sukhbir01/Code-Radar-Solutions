@@ -6,7 +6,7 @@ int main() {
         printf("31");
     }
     else if(n == 2){
-        printf("30");
+        printf("28");
     }
     else if(n == 3){
         printf("31");
