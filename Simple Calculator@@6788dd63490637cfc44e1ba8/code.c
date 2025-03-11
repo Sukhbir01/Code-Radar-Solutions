@@ -6,10 +6,10 @@ int main(){
     if(c == '+'){
         printf(a+b);
     }
-    if(c == '-'){
+    else if(c == '-'){
         printf(a-b);
     }
-    if(c == '*'){
+    else if(c == '*'){
         printf(a*b);
     }
     else{
