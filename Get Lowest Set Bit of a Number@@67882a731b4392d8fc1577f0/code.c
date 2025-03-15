@@ -1,16 +1,21 @@
 #include <stdio.h>
-#include <math.h>
 
 int main() {
-    int num;
-    scanf("%d", &num);
+    int number, pos = 0;
+    scanf("%d", &number);
 
-    if (num == 0) {
-        printf("0");
-    } else {
-        int position = log2(num & -num) + 1;
-        printf("%d\n", position);
+    if (number == 0) {
+        printf("No set bits (number is zero).\n");
+        return 0;
     }
+
+    // Loop to find position of lowest set bit
+    while ((number & 1) == 0) {
+        number = number >> 1;
+        pos++;
+    }
+
+    printf("%d\n", pos);
 
     return 0;
 }
