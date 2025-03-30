@@ -14,7 +14,7 @@ int main(){
     int result[200000];
     trackPlayersRanks(ranked, n, player, m, result);
     for (int i=0;i<m;i++){
-        print("%d",result[i]);
+        printf("%d",result[i]);
         return 0;
     }
 }
