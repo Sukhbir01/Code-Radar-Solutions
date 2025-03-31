@@ -1,5 +1,4 @@
 #include<stdio.h>
-int main(){
 int bubbleSort(int *myarr,int a) {
     for(int i =0;i<a;i++) {
         for(int j=0;j<a;j++) {
@@ -11,6 +10,7 @@ int bubbleSort(int *myarr,int a) {
         }
     }
 }  
+int main(){
 int printArray(int *myarr,int n) {
     for(int i = 0;i<n;i++) {
         printf("%d ",myarr[i]);
