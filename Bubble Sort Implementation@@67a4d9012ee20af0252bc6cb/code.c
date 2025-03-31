@@ -1,18 +1,14 @@
-#include<stdio.h>
-int bubbleSort(int *myarr,int a) {
-    for(int i =0;i<a;i++) {
-        for(int j=0;j<a;j++) {
-            if(myarr[i]<myarr[j]) {
-                int vari = myarr[j];
-                myarr[j] = myarr[i];
-                myarr[i] = vari;
+int bubblesort(int arr[],int n){
+    for(int i=0;i<n-1;i++){
+        for(int j=0,j<n-i-1,j++){
+            if(arr[j]>arr[j+1]){
+                swap(arr[j],arr[j+1]);
             }
         }
     }
-}  
-
-int printArray(int *myarr,int n) {
+}
+int printArray(int arr[],int n) {
     for(int i = 0;i<n;i++) {
-        printf("%d ",myarr[i]);
+        printf("%d ",arr[i]);
     }
 }
